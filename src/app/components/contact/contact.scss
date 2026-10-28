@@ -1,0 +1,41 @@
+$primary: #6d5efc;
+
+.contact {
+  padding: 4rem 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+
+  &__title {
+    font-size: 2rem;
+    margin: 0 0 0.5rem;
+    color: $primary;
+  }
+
+  &__intro {
+    margin: 0 0 1.5rem;
+  }
+
+  &__quick {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+}
+
+.btn-contact {
+  padding: 0.6rem 1.2rem;
+  border: 2px solid $primary;
+  border-radius: 12px;
+  color: $primary;
+  text-decoration: none;
+  font-weight: 600;
+
+  &:hover {
+    filter: brightness(1.1);
+  }
+
+  &--whatsapp {
+    background: $primary;
+    color: white;
+  }
+}

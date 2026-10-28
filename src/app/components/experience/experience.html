@@ -1,0 +1,16 @@
+<section class="experience" id="experiencia">
+  <h2 class="experience__title">Experiencia y formación</h2>
+
+  <ol class="timeline">
+    @for (entry of entries; track entry.title) {
+      <li class="timeline__item">
+        <p class="timeline__period">{{ entry.period }}</p>
+        <h3 class="timeline__name">{{ entry.title }}</h3>
+        <p class="timeline__place">{{ entry.place }}</p>
+        <p class="timeline__text">{{ entry.description }}</p>
+      </li>
+    } @empty {
+      <li>Aún no hay entradas.</li>
+    }
+  </ol>
+</section>

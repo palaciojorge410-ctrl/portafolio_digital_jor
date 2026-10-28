@@ -1,0 +1,57 @@
+$primary: #6d5efc;
+
+.experience {
+  padding: 4rem 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+
+  &__title {
+    font-size: 2rem;
+    margin: 0 0 1.5rem;
+    color: $primary;
+  }
+}
+
+.timeline {
+  list-style: none;
+  padding: 0 0 0 1.5rem;
+  margin: 0;
+  border-left: 3px solid #e4e1ff;
+
+  &__item {
+    position: relative;
+    margin-bottom: 2rem;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: -1.95rem;
+      top: 0.35rem;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: $primary;
+    }
+  }
+
+  &__period {
+    margin: 0;
+    color: $primary;
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+
+  &__name {
+    margin: 0.25rem 0 0;
+  }
+
+  &__place {
+    margin: 0;
+    font-style: italic;
+  }
+
+  &__text {
+    margin: 0.5rem 0 0;
+    line-height: 1.6;
+  }
+}

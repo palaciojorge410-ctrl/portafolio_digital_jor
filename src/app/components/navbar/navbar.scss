@@ -1,0 +1,47 @@
+$primary: #6d5efc;
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  padding: 0.75rem 1.5rem;
+  background: var(--bg);
+  border-bottom: 2px solid var(--border);
+
+  &__logo {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: $primary;
+    text-decoration: none;
+  }
+
+  &__links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+
+    a {
+      color: var(--text);
+      text-decoration: none;
+
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+
+  &__theme {
+    background: none;
+    border: 2px solid var(--border);
+    border-radius: 999px;
+    padding: 0.25rem 0.6rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+  }
+}

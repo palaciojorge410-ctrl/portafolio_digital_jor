@@ -1,0 +1,16 @@
+<section class="skills" id="habilidades">
+  <h2 class="skills__title">Habilidades</h2>
+
+  <div class="skills__grid">
+    @for (group of groups; track group.name) {
+      <div class="group">
+        <h3 class="group__name">{{ group.name }}</h3>
+        <ul class="group__list">
+          @for (item of group.items; track item) {
+            <li>{{ item }}</li>
+          }
+        </ul>
+      </div>
+    }
+  </div>
+</section>

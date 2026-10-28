@@ -1,0 +1,25 @@
+<section class="projects" id="proyectos">
+  <h2 class="projects__title">Proyectos</h2>
+
+  <div class="projects__grid">
+    @for (project of projects; track project.title) {
+      <article class="card">
+        <h3 class="card__title">{{ project.title }}</h3>
+        <p class="card__text">{{ project.description }}</p>
+
+        <ul class="card__tags">
+          @for (t of project.tech; track t) {
+            <li>{{ t }}</li>
+          }
+        </ul>
+
+        <div class="card__links">
+          <a [href]="project.repoUrl" target="_blank" rel="noopener">Código</a>
+          <a [href]="project.demoUrl" target="_blank" rel="noopener">Demo</a>
+        </div>
+      </article>
+    } @empty {
+      <p>Aún no hay proyectos.</p>
+    }
+  </div>
+</section>
